@@ -8,5 +8,11 @@ class Employee:
     def getInfo(self):
         return f"Pracownik: {self.firstName} {self.lastName} \t wiek: {self.age} \t wynagroedzenie: {self.salary}"
     
-pracownik = Employee("jan", "nowak", 21, 3500)
-print(pracownik.getInfo)
+    def __str__(self):
+        # zwraca string
+        return f"Pracownik: {self.firstName} {self.lastName} \t wiek: {self.age} \t wynagroedzenie: {self.salary}"
+    
+    def __repr__(self):
+        # techniczna repreznatencja obiektu, zwraca obiekt
+        return f"Pracownik: {self.firstName} {self.lastName} \t wiek: {self.age} \t wynagroedzenie: {self.salary}"
+

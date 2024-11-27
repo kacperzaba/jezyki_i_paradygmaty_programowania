@@ -9,7 +9,7 @@ class EmployessManager:
         firstName = input("Podaj imie: ")
         lastName = input("Podaj nazwisko: ")
         age = input("Podaj wiek: ")
-        salary = input("Podaj wiek: ")
+        salary = input("Podaj wynagrodzenie: ")
         self.employess.append(Employee(firstName, lastName, age, salary))
 
     def view_Employess(self):

@@ -1,4 +1,5 @@
 from EmployessManager import *
+from utility import *
 
 class FrontedManager:
     def __init__(self):
@@ -15,8 +16,8 @@ class FrontedManager:
         ]
 
         print('\n'.join(message))
-        msg = f"Wybierz opcje 1 - {len(message)}"
-        return (msg, 1, len(message))
+        msg = f"Wybierz opcje 1 - {len(message)}: "
+        return inputValue(msg, 1, len(message))
     
     def run(self):
         while True:
